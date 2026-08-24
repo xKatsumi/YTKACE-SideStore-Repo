@@ -4,7 +4,7 @@ Unofficial [SideStore](https://sidestore.io) / [LiveContainer](https://github.co
 
 > This repo is **not** affiliated with the official YTKACE project.  
 > It only provides a SideStore/LiveContainer-compatible JSON feed that links to the latest official YTKACE release from:  
-> https://github.com/itzzace/ytkace
+> [https://github.com/itzzace/ytkace](https://github.com/itzzace/ytkace)
 
 ## What is this?
 
@@ -18,11 +18,11 @@ This repository automatically generates a SideStore/LiveContainer source file (`
 
 Add this source to SideStore or LiveContainer:
 
-<a href="sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+<a href="#how-to-add-this-source-manually">
   <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" width="250">
 </a>
 
-<a href="https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+<a href="#how-to-add-this-source-manually">
   <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" width="250">
 </a>
 
@@ -82,7 +82,7 @@ You don’t need to do anything; just keep the source added in SideStore/LiveCon
 - This is an **unofficial** community repo.
 - If YTKACE stops releasing updates or changes how releases are published, this source may stop working.
 - For issues or feature requests related to YTKACE itself, please refer to the official repo:  
-  https://github.com/itzzace/ytkace
+  [https://github.com/itzzace/ytkace](https://github.com/itzzace/ytkace)
 
 ## Credits
 
