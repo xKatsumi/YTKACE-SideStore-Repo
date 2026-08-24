@@ -1,0 +1,44 @@
+name: Update SideStore source for YTKace
+
+on:
+  schedule:
+    # Run every hour; adjust cron as you like
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install node-fetch
+
+      - name: Generate sidestore.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node update-sidestore.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sidestore.json
+          if ! git diff --staged --quiet; then
+            git commit -m "Update sidestore.json for latest YTKace release"
+            git push
+          else
+            echo "No changes to sidestore.json"
+          fi
