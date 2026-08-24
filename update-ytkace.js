@@ -6,7 +6,7 @@ const OWNER = 'itzzace';
 const REPO = 'ytkace';
 
 // ===== CUSTOMIZED FOR YOUR REPO =====
-const YOUR_USERNAME = 'AhmadAradii';
+const YOUR_USERNAME = 'xKatsumi';
 const YOUR_REPO = 'YTKACE-SideStore-Repo';
 const BUNDLE_ID = 'com.google.ios.youtube';
 const APP_NAME = 'YTKace';
