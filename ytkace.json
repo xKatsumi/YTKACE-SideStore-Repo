@@ -1,0 +1,11 @@
+{
+  "name": "YTKace",
+  "identifier": "com.itzzace.ytkace.source",
+  "subtitle": "YTKace for SideStore & LiveContainer",
+  "description": "Unofficial SideStore/LiveContainer source for YTKace. This repo only provides links; the app is maintained by itzzace.",
+  "iconURL": "https://img.lightshot.app/8gRG1MrsTPO7ZiwX_JfmbA.jpeg",
+  "website": "https://itzzace.github.io/ytkace/",
+  "sourceURL": "https://raw.githubusercontent.com/AhmadAradii/YTKACE-SideStore-Repo/main/ytkace.json",
+  "apps": [],
+  "news": []
+}
