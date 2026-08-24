@@ -18,14 +18,18 @@ This repository automatically generates a SideStore/LiveContainer source file (`
 
 Add this source to SideStore or LiveContainer with one tap, or manually:
 
-<div style="display:flex; flex-direction:column; gap:24px; align-items:flex-start; margin-bottom:10px;">
-  <a href="https://fwuf.in/#/sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-    <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" style="display:block; width:150px; height:auto;">
-  </a>
+<div style="margin-bottom:10px;">
+  <div style="margin-bottom:20px;">
+    <a href="https://fwuf.in/#/sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+      <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" style="display:block; height:30px; width:auto;">
+    </a>
+  </div>
 
-  <a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-    <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" style="display:block; width:150px; height:auto;">
-  </a>
+  <div>
+    <a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+      <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" style="display:block; height:30px; width:auto;">
+    </a>
+  </div>
 </div>
 
 On iOS, tapping a button will attempt to open the corresponding app and add this source automatically.  
