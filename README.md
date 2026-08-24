@@ -14,11 +14,44 @@ This repository automatically generates a SideStore/LiveContainer source file (`
 - This repo only provides a link to the official YTKACE release.
 - All credit for YTKACE goes to the original developer.
 
-## How to add this source
+## Add source
 
-### In SideStore or LiveContainer
+Add this source to SideStore or LiveContainer:
+
+<a href="sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+  <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" width="250">
+</a>
+
+<a href="https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+  <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" width="250">
+</a>
+
+Or manually add this source URL:
+
+```text
+https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
+```
+
+## How to add this source manually
+
+### In SideStore
 
 1. Open **SideStore** (or SideStore inside LiveContainer).
+2. Go to **Sources**.
+3. Tap **+** (Add Source).
+4. Enter this URL:
+
+   ```text
+   https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
+   ```
+
+5. Save.
+6. Go back to the **Sources** tab.
+7. You should see the **Repo** listed. Install or update it from there.
+
+### In LiveContainer
+
+1. Open **LiveContainer**.
 2. Go to **Sources**.
 3. Tap **+** (Add Source).
 4. Enter this URL:
@@ -35,7 +68,7 @@ This repository automatically generates a SideStore/LiveContainer source file (`
 
 This repo uses GitHub Actions to automatically update `ytkace.json` whenever a new YTKACE release is published.
 
-- A scheduled workflow runs **every hour** and checks for new releases.
+- A scheduled workflow runs **once per day** and checks for new releases.
 - If a new version is found, `ytkace.json` is updated with:
   - New version number
   - New version date
