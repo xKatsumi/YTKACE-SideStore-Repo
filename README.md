@@ -16,17 +16,20 @@ This repository automatically generates a SideStore/LiveContainer source file (`
 
 ## Add source
 
-Add this source to SideStore or LiveContainer:
+Add this source to SideStore or LiveContainer with one tap, or manually:
 
-<a href="#how-to-add-this-source-manually">
-  <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" width="250">
+<a href="https://fwuf.in/#/sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+  <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" width="180">
 </a>
 
-<a href="#how-to-add-this-source-manually">
-  <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" width="250">
+<a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+  <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" width="180">
 </a>
 
-Or manually add this source URL:
+On iOS, tapping a button will attempt to open the corresponding app and add this source automatically.  
+If nothing happens, use the manual steps below.
+
+Manual source URL:
 
 ```text
 https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
@@ -47,7 +50,7 @@ https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.jso
 
 5. Save.
 6. Go back to the **Sources** tab.
-7. You should see the **Repo** listed. Install or update it from there.
+7. You should see **YTKACE SideStore Repo** listed. Install or update YTKACE from there.
 
 ### In LiveContainer
 
@@ -62,7 +65,7 @@ https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.jso
 
 5. Save.
 6. Go back to the **Sources** tab.
-7. You should see the **Repo** listed. Install or update it from there.
+7. You should see **YTKACE SideStore Repo** listed. Install or update YTKACE from there.
 
 ## Automatic updates
 
