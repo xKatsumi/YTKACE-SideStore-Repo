@@ -26,19 +26,19 @@ jobs:
           npm init -y
           npm install node-fetch
 
-      - name: Generate sidestore.json
+      - name: Generate ytkace.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node update-sidestore.js
+        run: node update-ytkace.js
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sidestore.json
+          git add ytkace.json
           if ! git diff --staged --quiet; then
-            git commit -m "Update sidestore.json for latest YTKace release"
+            git commit -m "Update ytkace.json for latest YTKace release"
             git push
           else
-            echo "No changes to sidestore.json"
+            echo "No changes to ytkace.json"
           fi
