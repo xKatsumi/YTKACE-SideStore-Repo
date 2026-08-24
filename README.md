@@ -24,7 +24,7 @@ This repository automatically generates a SideStore/LiveContainer source file (`
 4. Enter this URL:
 
    ```text
-   https://raw.githubusercontent.com/AhmadAradii/YTKACE-SideStore-Repo/main/ytkace.json
+   https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
    ```
 
 5. Save.
@@ -54,3 +54,4 @@ You don’t need to do anything; just keep the source added in SideStore/LiveCon
 ## Credits
 
 - YTKACE development: [itzzace](https://github.com/itzzace/ytkace)
+- Unofficial SideStore/LiveContainer source: [xKatsumi](https://github.com/xKatsumi/YTKACE-SideStore-Repo)
