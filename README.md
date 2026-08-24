@@ -18,105 +18,13 @@ This repository automatically generates a SideStore/LiveContainer source file (`
 
 Add this source to SideStore or LiveContainer with one tap, or manually:
 
-<a href="https://fwuf.in/#/sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-  <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" width="200" height="30">
-</a>
-
-<br>
-
-<a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-  <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" width="200" height="30">
-</a>
-
-On iOS, tapping a button will attempt to open the corresponding app and add this source automatically.  
-If nothing happens, use the manual steps below.
-
-Manual source URL:
-
-```text
-https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
-```
-
-## How to add this source manually
-
-### In SideStore
-
-1. Open **SideStore** (or SideStore inside LiveContainer).
-2. Go to **Sources**.
-3. Tap **+** (Add Source).
-4. Enter this URL:
-
-   ```text
-   https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
-  Here’s a refined “Add source” section that:
-
-- Uses the same explicit size for both buttons  
-- Adds a small vertical gap between them  
-- Keeps them aligned properly on mobile
-
-Replace your **“Add source”** section with this:
-
-```md
-## Add source
-
-Add this source to SideStore or LiveContainer with one tap, or manually:
-
-<div style="display:flex; flex-direction:column; gap:10px; align-items:flex-start;">
-  <a href="https://fwuf.in/#/sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-    <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" width="180" height="28">
+<div style="display:flex; flex-direction:column; gap:20px; align-items:flex-start; margin-bottom:10px;">
+  <a href="https://fwuf.in/#/sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json" style="display:inline-block;">
+    <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" style="display:block; max-width:100%;">
   </a>
 
-  <a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-    <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" width="180" height="28">
-  </a>
-</div>
-
-On iOS, tapping a button will attempt to open the corresponding app and add this source automatically.  
-If nothing happens, use the manual steps below.
-
-Manual source URL:
-
-```text
-https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
-```
-```
-
-This:
-
-- Wraps both buttons in a flex column with `gap:10px` → consistent spacing between them.
-- Keeps both at `width="180"` so they’re the same size.
-- Prevents the “shifted / above” look on mobile by controlling layout explicitly.
-
-If you want the **full `README.md`** with this change already applied, here it is:
-
-```md
-# YTKACE SideStore Repo
-
-Unofficial [SideStore](https://sidestore.io) / [LiveContainer](https://github.com/LiveContainer/LiveContainer) source for **YTKACE**.
-
-> This repo is **not** affiliated with the official YTKACE project.  
-> It only provides a SideStore/LiveContainer-compatible JSON feed that links to the latest official YTKACE release from:  
-> [https://github.com/itzzace/ytkace](https://github.com/itzzace/ytkace)
-
-## What is this?
-
-This repository automatically generates a SideStore/LiveContainer source file (`ytkace.json`) that points to the latest YTKACE IPA released by the official maintainer ([itzzace](https://github.com/itzzace/ytkace)).
-
-- You do **not** download anything from this repo directly.
-- This repo only provides a link to the official YTKACE release.
-- All credit for YTKACE goes to the original developer.
-
-## Add source
-
-Add this source to SideStore or LiveContainer with one tap, or manually:
-
-<div style="display:flex; flex-direction:column; gap:10px; align-items:flex-start;">
-  <a href="https://fwuf.in/#/sidestore://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-    <img src="https://img.shields.io/badge/Add%20to%20SideStore-7B61FF?style=flat" alt="Add to SideStore" width="180" height="28">
-  </a>
-
-  <a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
-    <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" width="180" height="28">
+  <a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json" style="display:inline-block;">
+    <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" style="display:block; max-width:100%;">
   </a>
 </div>
 
@@ -185,6 +93,3 @@ You don’t need to do anything; just keep the source added in SideStore/LiveCon
 
 - YTKACE development: [itzzace](https://github.com/itzzace/ytkace)
 - Unofficial SideStore/LiveContainer source: [xKatsumi](https://github.com/xKatsumi/YTKACE-SideStore-Repo)
-```
-
-If after this the SideStore badge text still looks “wider” than LiveContainer’s and you want them visually identical, we can switch both to a custom text like “Add Source” so the badge widths match exactly.
