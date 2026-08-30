@@ -26,7 +26,7 @@ Add this source to SideStore or LiveContainer with one tap, or manually:
   </div>
 
   <div>
-    <a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json">
+    <a href="https://fwuf.in/#/livecontainer://source/add?url=https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace-livecontainer.json">
       <img src="https://img.shields.io/badge/Add%20to%20LiveContainer-007AFF?style=flat" alt="Add to LiveContainer" style="display:block; height:30px; width:auto;">
     </a>
   </div>
@@ -66,7 +66,7 @@ https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.jso
 4. Enter this URL:
 
    ```text
-   https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
+   https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace-livecontainer.json
    ```
 
 5. Save.
