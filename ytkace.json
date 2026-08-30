@@ -9,7 +9,7 @@
   "apps": [
     {
       "name": "YTKace (iOS 16)",
-      "bundleIdentifier": "com.google.ios.youtube",
+      "bundleIdentifier": "com.google.ios.youtubeios16",
       "developerName": "itzzace",
       "version": "0.9.1",
       "versionDate": "2026-08-29",
@@ -25,7 +25,7 @@
     },
     {
       "name": "YTKace (iOS 17+)",
-      "bundleIdentifier": "com.google.ios.youtube",
+      "bundleIdentifier": "com.google.ios.youtubeios17",
       "developerName": "itzzace",
       "version": "0.9.1",
       "versionDate": "2026-08-29",
