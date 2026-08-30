@@ -35,12 +35,6 @@ Add this source to SideStore or LiveContainer with one tap, or manually:
 On iOS, tapping a button will attempt to open the corresponding app and add this source automatically.  
 If nothing happens, use the manual steps below.
 
-Manual source URL:
-
-```text
-https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json
-```
-
 ## How to add this source manually
 
 ### In SideStore
