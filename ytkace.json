@@ -8,18 +8,34 @@
   "sourceURL": "https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json",
   "apps": [
     {
-      "name": "YTKace",
+      "name": "YTKace (iOS 16)",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "itzzace",
       "version": "0.9.1",
       "versionDate": "2026-08-29",
-      "versionDescription": "by @itzzace0\n\nWhat’s new:\n• Updated for YouTube 21.34.3\n• Added a default startup tab option, so YouTube can open on any tab you choose\n• Added a Shorts session limit that stops endless scrolling after a set number\n\nFixed:\n• Fixed Save to Photos silently doing nothing, and it now confirms when a video is saved\n• Fixed Save to Photos on large videos, and it now explains when Photos cannot store the format\n• Fixed backing up settings producing an empty file with nothing in it\n• Reduced feed scrolling lag from Remove Products, Shorts, Mixes and Community Posts\n\nYouTube 21.34.3 requires iOS 17, so there are two IPAs:\n• `YTKACE_0.9.1_YouTube_21.34.3.ipa` for iOS 17 and newer\n• `YTKACE_0.9.1_YouTube_21.33.6.ipa` for iOS 16\n",
+      "versionDescription": "by @itzzace0\n\nWhat’s new:\n• Updated for YouTube 21.34.3\n• Added a default startup tab option, so YouTube can open on any tab you choose\n• Added a Shorts session limit that stops endless scrolling after a set number\n\nFixed:\n• Fixed Save to Photos silently doing nothing, and it now confirms when a video is saved\n• Fixed Save to Photos on large videos, and it now explains when Photos cannot store the format\n• Fixed backing up settings producing an empty file with nothing in it\n• Reduced feed scrolling lag from Remove Products, Shorts, Mixes and Community Posts\n\nYouTube 21.34.3 requires iOS 17, so there are two IPAs:\n• `YTKACE_0.9.1_YouTube_21.34.3.ipa` for iOS 17 and newer\n• `YTKACE_0.9.1_YouTube_21.33.6.ipa` for iOS 16\n\n\nYouTube 21.34.3 requires iOS 17, so there are two IPAs:\n• `YTKace_0.9.1_YouTube_21.34.3.ipa` for iOS 17 and newer\n• `YTKace_0.9.1_YouTube_21.33.6.ipa` for iOS 16\n",
       "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v0.9.1/YTKACE_0.9.1_YouTube_21.33.6.ipa",
       "iconURL": "https://img.lightshot.app/8gRG1MrsTPO7ZiwX_JfmbA.jpeg",
       "size": 132477656,
       "screenshotURLs": [],
-      "localizedDescription": "YTKace – a modified YouTube client with extra features.",
-      "subtitle": "Enhanced YouTube for iOS",
+      "localizedDescription": "YTKace – a modified YouTube client with extra features. (iOS 16)",
+      "subtitle": "Enhanced YouTube for iOS (iOS 16)",
+      "tintColor": "FF0000",
+      "beta": false
+    },
+    {
+      "name": "YTKace (iOS 17+)",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "itzzace",
+      "version": "0.9.1",
+      "versionDate": "2026-08-29",
+      "versionDescription": "by @itzzace0\n\nWhat’s new:\n• Updated for YouTube 21.34.3\n• Added a default startup tab option, so YouTube can open on any tab you choose\n• Added a Shorts session limit that stops endless scrolling after a set number\n\nFixed:\n• Fixed Save to Photos silently doing nothing, and it now confirms when a video is saved\n• Fixed Save to Photos on large videos, and it now explains when Photos cannot store the format\n• Fixed backing up settings producing an empty file with nothing in it\n• Reduced feed scrolling lag from Remove Products, Shorts, Mixes and Community Posts\n\nYouTube 21.34.3 requires iOS 17, so there are two IPAs:\n• `YTKACE_0.9.1_YouTube_21.34.3.ipa` for iOS 17 and newer\n• `YTKACE_0.9.1_YouTube_21.33.6.ipa` for iOS 16\n\n\nYouTube 21.34.3 requires iOS 17, so there are two IPAs:\n• `YTKace_0.9.1_YouTube_21.34.3.ipa` for iOS 17 and newer\n• `YTKace_0.9.1_YouTube_21.33.6.ipa` for iOS 16\n",
+      "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v0.9.1/YTKACE_0.9.1_YouTube_21.34.3.ipa",
+      "iconURL": "https://img.lightshot.app/8gRG1MrsTPO7ZiwX_JfmbA.jpeg",
+      "size": 133752298,
+      "screenshotURLs": [],
+      "localizedDescription": "YTKace – a modified YouTube client with extra features. (iOS 17+)",
+      "subtitle": "Enhanced YouTube for iOS (iOS 17+)",
       "tintColor": "FF0000",
       "beta": false
     }
