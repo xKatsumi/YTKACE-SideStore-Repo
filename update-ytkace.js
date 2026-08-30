@@ -38,17 +38,93 @@ async function main() {
 
   const release = await res.json();
 
-  const version = release.tag_name.replace(/^v/, ''); // "1.2.3"
+  const version = release.tag_name.replace(/^v/, ''); // "0.9.1"
   const versionDate = release.published_at.slice(0, 10); // "YYYY-MM-DD"
-  const versionDescription = release.body || '';
 
-  const ipaAsset = release.assets.find(a => a.name.endsWith('.ipa'));
-  if (!ipaAsset) {
-    throw new Error('No .ipa asset found in latest release');
+  // Build a nicer versionDescription that mentions both IPAs
+  const baseBody = release.body || '';
+  const versionDescription =
+    baseBody +
+    `\n\nYouTube 21.34.3 requires iOS 17, so there are two IPAs:\n` +
+    `• \`${APP_NAME}_${version}_YouTube_21.34.3.ipa\` for iOS 17 and newer\n` +
+    `• \`${APP_NAME}_${version}_YouTube_21.33.6.ipa\` for iOS 16\n`;
+
+  // Find all .ipa assets
+  const ipaAssets = release.assets.filter(a => a.name.endsWith('.ipa'));
+  if (ipaAssets.length === 0) {
+    throw new Error('No .ipa assets found in latest release');
   }
 
-  const downloadURL = ipaAsset.browser_download_url;
-  const size = ipaAsset.size;
+  // Detect iOS 16 vs iOS 17+ by filename pattern
+  // Expected:
+  //   YTKACE_0.9.1_YouTube_21.33.6.ipa  -> iOS 16
+  //   YTKACE_0.9.1_YouTube_21.34.3.ipa  -> iOS 17+
+  const ios16Asset = ipaAssets.find(a => /YouTube_21\.33\.6\.ipa$/.test(a.name));
+  const ios17Asset = ipaAssets.find(a => /YouTube_21\.34\.3\.ipa$/.test(a.name));
+
+  const apps = [];
+
+  // iOS 16 entry
+  if (ios16Asset) {
+    apps.push({
+      name: `${APP_NAME} (iOS 16)`,
+      bundleIdentifier: BUNDLE_ID,
+      developerName: DEVELOPER,
+      version,
+      versionDate,
+      versionDescription,
+      downloadURL: ios16Asset.browser_download_url,
+      iconURL: ICON_URL,
+      size: ios16Asset.size,
+      screenshotURLs: [],
+      localizedDescription: LOCALIZED_DESCRIPTION + ' (iOS 16)',
+      subtitle: SUBTITLE + ' (iOS 16)',
+      tintColor: TINT_COLOR,
+      beta: false
+    });
+  }
+
+  // iOS 17+ entry
+  if (ios17Asset) {
+    apps.push({
+      name: `${APP_NAME} (iOS 17+)`,
+      bundleIdentifier: BUNDLE_ID,
+      developerName: DEVELOPER,
+      version,
+      versionDate,
+      versionDescription,
+      downloadURL: ios17Asset.browser_download_url,
+      iconURL: ICON_URL,
+      size: ios17Asset.size,
+      screenshotURLs: [],
+      localizedDescription: LOCALIZED_DESCRIPTION + ' (iOS 17+)',
+      subtitle: SUBTITLE + ' (iOS 17+)',
+      tintColor: TINT_COLOR,
+      beta: false
+    });
+  }
+
+  // Fallback: if patterns don't match but we have IPAs, just add them generically
+  if (apps.length === 0 && ipaAssets.length > 0) {
+    for (const asset of ipaAssets) {
+      apps.push({
+        name: APP_NAME,
+        bundleIdentifier: BUNDLE_ID,
+        developerName: DEVELOPER,
+        version,
+        versionDate,
+        versionDescription,
+        downloadURL: asset.browser_download_url,
+        iconURL: ICON_URL,
+        size: asset.size,
+        screenshotURLs: [],
+        localizedDescription: LOCALIZED_DESCRIPTION,
+        subtitle: SUBTITLE,
+        tintColor: TINT_COLOR,
+        beta: false
+      });
+    }
+  }
 
   // This is the URL users will add in SideStore/LiveContainer
   const sourceURL = `https://raw.githubusercontent.com/${YOUR_USERNAME}/${YOUR_REPO}/main/ytkace.json`;
@@ -62,29 +138,14 @@ async function main() {
     iconURL: ICON_URL,
     website: WEBSITE,
     sourceURL: sourceURL,
-    apps: [
-      {
-        name: APP_NAME,
-        bundleIdentifier: BUNDLE_ID, // must match the IPA's bundle ID
-        developerName: DEVELOPER,
-        version,
-        versionDate,
-        versionDescription,
-        downloadURL,
-        iconURL: ICON_URL,
-        size,
-        screenshotURLs: [],
-        localizedDescription: LOCALIZED_DESCRIPTION,
-        subtitle: SUBTITLE,
-        tintColor: TINT_COLOR,
-        beta: false
-      }
-    ],
+    apps: apps,
     news: []
   };
 
   // Write to ytkace.json (not sidestore.json)
   fs.writeFileSync('ytkace.json', JSON.stringify(sidestore, null, 2) + '\n');
+
+  console.log(`Generated ytkace.json with ${apps.length} app(s)`);
 }
 
 main().catch(err => {
